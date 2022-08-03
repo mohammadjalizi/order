@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import Expensitem from './Componenet/Expensitem';
 import './App.css';
 
 function App() {
+  const expens=[
+{title:" tv ",amounth:39.68, data:new Date(202,2,2)},
+{title:" car red",amounth:68, data:new Date(202,2,2)},
+{title:" car insurance",amounth:394.68, data:new Date(202,2,2)},
+
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Expensitem
+ title={expens[0].title} 
+ amounth={expens[0].amounth} 
+ data={expens[0].data}/>
+<Expensitem
+ title={expens[1].title} 
+ amounth={expens[1].amounth} 
+ data={expens[1].data}/>
+<Expensitem
+ title={expens[2].title} 
+ amounth={expens[2].amounth} 
+ data={expens[2].data}/>
+
     </div>
   );
 }

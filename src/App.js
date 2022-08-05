@@ -1,5 +1,5 @@
-import Expenses from './Componenet/Expenses';
-import './App.css';
+import Expenses from './Expenses/Expenses';
+import './App.css'; 
 
 
 function App() {
@@ -18,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+ 

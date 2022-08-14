@@ -1,6 +1,6 @@
 import Expensitem from "./Expensitem"
 
-function Expenses(props){
+const Expenses=(props)=>{
 return (
 <div className=" bg-black m-10">
 

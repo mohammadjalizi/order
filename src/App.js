@@ -1,8 +1,10 @@
 import Expenses from './Expenses/Expenses';
 import './App.css'; 
+  
+import EXpensform from './NEwexpens/EXpemsform';
 
 
-function App() {
+const App=(props)=> {
   const expens=[
 {title:" tv ",amounth:39.68, data:new Date(202,2,2)},
 {title:" car red",amounth:68, data:new Date(202,2,2)},
@@ -10,9 +12,12 @@ function App() {
 
   ]
   return (
-    <div className="App">
-<p>lest start</p>
+    <div>
+
+<EXpensform/>
 <Expenses items={expens}/>
+
+
     </div>
   );
 }
